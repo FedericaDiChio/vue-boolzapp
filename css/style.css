@@ -1,4 +1,4 @@
-/**OVVIAMENTE MODIFICARE BODY**/
+
 
 .bg-grad {
     height: 100vh;
@@ -11,15 +11,16 @@
       rgb(219,220,212) 85%
     );
 }
-  
+
+/**MODIFICARE**/  
 .container {
     height: 700px;
 } 
 
 
-/* COL */
+/* COL */ 
 .left-col {
-    height: 700px;
+    height: 700px; /**MODIFICARE**/
     background-color: rgb(255, 255, 255);
 }
 
@@ -27,7 +28,7 @@
     background-image: url("../img/mine.jpg")
 }
 
-.dunno {
+.dunno { /**MODIFICARE**/
     height: 70px;
 }
 
@@ -45,13 +46,13 @@
 }
 
 /* ICONS  */
-.icons-grey {
+.icons-grey { /**MODIFICARE**/
     color: rgb(177, 177, 177);
     font-size: 20px;
 }
 
 
-img {
+img { /**MODIFICARE**/
     width: 50px;
     border-radius: 50%;
 }
