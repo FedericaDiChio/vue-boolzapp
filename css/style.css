@@ -1,3 +1,19 @@
-/* body {
-    background-color: rosybrown ;
-} */
+/**OVVIAMENTE MODIFICARE BODY**/
+
+body {
+    height: 100vh;
+    background-image:
+    linear-gradient(
+      to bottom, 
+      rgb(0,150,136), 25%,
+      rgb(219,220,212) 15%,
+      rgb(219,220,212) 85%,
+      rgb(219,220,212) 85%
+    );
+  }
+  
+
+.container {
+    background-color: royalblue;
+    height: 500px;
+} 
