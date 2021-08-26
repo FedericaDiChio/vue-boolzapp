@@ -20,7 +20,7 @@
 /* COL */ 
 .left-col {
     height: 700px; /**MODIFICARE**/
-    background-color: rgb(255, 255, 255);
+    
 }
 
 .right-col {
@@ -44,6 +44,14 @@
     background-color: rgb(233, 235, 235);
 }
 
+.bg-user {
+    background-color: rgb(213, 249, 186);
+}
+
+.bg-contact {
+    background-color: rgb(255, 255, 255);
+}
+
 /* ICONS  */
 .icons-grey { /**MODIFICARE**/
     color: rgb(177, 177, 177);
@@ -54,4 +62,11 @@
 img { /**MODIFICARE**/
     width: 50px;
     border-radius: 50%;
+}
+
+.message {
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
 }
