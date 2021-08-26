@@ -21,8 +21,17 @@
 /* COL */
 .left-col {
     height: 700px;
-};
+}
 
 .right-col {
     background-image: url("../img/mine.jpg")
-};
+}
+
+.dunno {
+    height: 70px;
+}
+
+.bg-grey {
+    background-color: rgb(234,234,234);
+}
+
