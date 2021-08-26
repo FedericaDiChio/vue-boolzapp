@@ -1,6 +1,6 @@
 /**OVVIAMENTE MODIFICARE BODY**/
 
-body {
+.bg-grad {
     height: 100vh;
     background-image:
     linear-gradient(
@@ -10,9 +10,19 @@ body {
       rgb(219,220,212) 85%,
       rgb(219,220,212) 85%
     );
-  }
+}
   
 .container {
-    background-color: royalblue;
-    height: 500px;
+    height: 700px;
+    overflow: hidden;
 } 
+
+
+/* COL */
+.left-col {
+    height: 700px;
+};
+
+.right-col {
+    background-image: url("../img/mine.jpg")
+};
