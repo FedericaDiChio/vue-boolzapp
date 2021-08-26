@@ -20,7 +20,7 @@
 /* COL */
 .left-col {
     height: 700px;
-    
+    background-color: rgb(255, 255, 255);
 }
 
 .right-col {
@@ -31,7 +31,27 @@
     height: 70px;
 }
 
+/* BACKGROUND COLOR  */
 .bg-grey {
     background-color: rgb(234,234,234);
 }
 
+.bg-sky {
+    background-color: rgb(142, 218, 525);
+}
+
+.bg-hover {
+    background-color: rgb(233, 235, 235);
+}
+
+/* ICONS  */
+.icons-grey {
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+}
+
+
+img {
+    width: 50px;
+    border-radius: 50%;
+}
