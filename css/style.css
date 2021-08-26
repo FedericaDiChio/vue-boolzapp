@@ -14,13 +14,13 @@
   
 .container {
     height: 700px;
-    overflow: hidden;
 } 
 
 
 /* COL */
 .left-col {
     height: 700px;
+    
 }
 
 .right-col {
