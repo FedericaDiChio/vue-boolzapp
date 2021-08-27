@@ -16,102 +16,161 @@
 
 
 <body>
-    <div class="d-flex align-items-center bg-grad">
+    <div id="root" class="h-100 d-flex align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="col-4 p-0 left-col overflow-auto bg-white">
-                    <header class="">
-                        <!-- USER AVATAR  -->
-                        <div class="d-flex align-items-center justify-content-between user-avatar bg-grey">
-                            <div class="p-2">
+            <main class="bg-white">
+                <div class="row h-100">
+                    <div class="col-4 pe-0 h-100 d-flex flex-column">
+                        <section id="user-info" class="d-flex align-items-center justify-content-between">
+                            <!-- AVATAR  -->
+                            <div class="p-2 section-height">
                                 <img src="./img/avatar_io.jpg" alt="avatar" class="img-avatar">
                                 <span>Nome utente</span>
                             </div>
                             <!-- ICONS  -->
-                            <div class="mx-2 icons-grey icons icon-size">
+                            <div class="mx-2">
                                 <i class="fas fa-circle-notch "></i>
                                 <i class="fas fa-comment-alt px-3"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
-                        </div>
+                        </section>
                         <!-- NOTIFICATIONS  -->
-                        <div class="d-flex align-items-center p-3 bg-sky notifications">
-                            <div class="icons-sky">
-                                <i class="fas fa-bell-slash bg-white rounded-circle me-3 p-3"></i>
+                        <section id="notifications" class="d-flex align-items-center bg-sky">
+                            <div id="icon-rounded"
+                                class="mx-2 rounded-circle d-flex align-items-center justify-content-center bg-white">
+                                <i class="fas fa-bell-slash"></i>
                             </div>
                             <div>
                                 <div>Ricevi notifiche di nuovi messaggi</div>
                                 <a href="">Attiva notifiche desktop</a>
                             </div>
-                        </div>
-                        <!-- INPUT SEARCH  -->
-                        <div class="d-flex align-items-center justify-content-center bg-grey search">
+                        </section>
+                        <!-- SEARCH-BAR  -->
+                        <section id="search-bar" class="d-flex align-items-center justify-content-center w-100 bg-grey">
                             <div class="input-group m-2">
-                                <input type="search" id="search" class="form-control"
-                                    placeholder="Cerca o inizia nuova chat">
+                                <input type="text" class="form-control" placeholder="Cerca o inizia nuova chat">
                             </div>
-                        </div>     
-                    </header>
-                    <!-- CONTACT -->
-                    <div class="col-12 d-flex align-items-center contact">
-                        <div class="my-2">
-                            <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
-                            <span>Nome utente</span>
-                        </div>
+                        </section>
+                        <!-- CONTACTS  -->
+                        <section id="contacts" class="overflow-auto d-flex flex-column">
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                            <div class="my-2 section-height">
+                                <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                                <span>Nome utente</span>
+                            </div>
+                        </section>
+
+                        </section>
                     </div>
-                    <!-- CONTACT -->
-                    <div class="col-12 d-flex align-items-center contact">
-                        <div class="my-2">
-                            <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
-                            <span>Nome utente</span>
-                        </div>
-                    </div> 
-                    
-                </div>
-                <div class="col-8 p-0 overflow-auto d-flex flex-column justify-content-between right-col">
-                    <div>
-                        <!-- USER AVATAR  -->
-                        <div class=" d-flex align-items-center justify-content-between user-avatar bg-grey">
-                            <div class="p-2">
+                    <div class="col-8 p-0 h-100 d-flex flex-column">
+                        <header class="d-flex align-items-center justify-content-between bg-grey">
+                            <!-- AVATAR  -->
+                            <div class="p-2 section-height">
                                 <img src="./img/avatar_io.jpg" alt="avatar" class="img-avatar">
                                 <span>Nome utente</span>
                             </div>
                             <!-- ICONS  -->
-                            <div class="mx-2 icons-grey icons icon-size">
-                                <i class="fas fa-search"></i>
-                                <i class="fas fa-paperclip px-3"></i>
+                            <div class="mx-2">
+                                <i class="fas fa-circle-notch"></i>
+                                <i class="fas fa-comment-alt px-3"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 px-5 d-flex justify-content-end">
-                                    <div class="d-flex align-items-center mt-4 bg-user message">
-                                        Ok, va bene.
-                                    </div>
+                        </header>
+                        <main class="flex-grow-1 overflow-auto right-col">
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
                                 </div>
-                                <div class="col-12 px-5 d-flex justify-content-end">
-                                    <div class="d-flex align-items-center mt-4 bg-user message">
-                                        Ok, va bene.
-                                    </div>
-                                </div>
-                                
-                               
                             </div>
-                        </div>
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div><div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                            <div class="col-12 px-5 d-flex justify-content-start">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                            <div class="col-12 px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 bg-user message">
+                                    Ok, va bene.
+                                </div>
+                            </div>
+                        </main>
+                        <footer class="d-flex justify-content-between align-items-center p-3 mt-5 bg-grey">
+                            <i class="far fa-smile icons-grey icon-size"></i>
+                            <div class="input-group mb-1 px-5">
+                                <input type="text" class="form-control" placeholder="Scrivi un nuovo messaggio">
+                            </div>
+                           <i class="fas fa-microphone icons-grey icon-size"></i>
+                        </footer>
+                        
                     </div>
-                    <footer class="d-flex justify-content-between align-items-center p-3 mt-5 bg-grey">
-                        <i class="far fa-smile icons-grey icon-size"></i>
-                        <div class="input-group mb-1 px-5">
-                            <input type="text" class="form-control" placeholder="Scrivi un nuovo messaggio">
-                        </div>
-                       <i class="fas fa-microphone icons-grey icon-size"></i>
-                    </footer>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
-   
+    </div>
+
 </body>
 
 </html>

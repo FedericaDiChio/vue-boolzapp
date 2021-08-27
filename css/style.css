@@ -1,24 +1,29 @@
-.bg-grad {
+body {
     height: 100vh;
-    background-image:
-    linear-gradient(
-      to bottom, 
-      rgb(0,150,136), 25%,
-      rgb(219,220,212) 15%,
-      rgb(219,220,212) 85%,
-      rgb(219,220,212) 85%
+    background-image: linear-gradient(
+      to bottom,
+      #00bfa5 15%,
+      #f0f0f0 15%,
+      #f0f0f0 100%
     );
+  }
+
+main {
+      height: 95vh;
 }
 
-/* COL */ 
-
-.left-col {
-    height: 700px;   /*MODIFICARE*/
+.section-height {
+    height: 70px;
     
 }
 
-.right-col { 
-    height: 700px;    /*MODIFICARE*/
+.img-avatar {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#main-chat {     
     background-image: url("../img/mine.jpg");
 }
 
@@ -51,24 +56,11 @@
 
 
 /* ICONS  */
-.icons-grey {
-    color: rgb(177, 177, 177);
-}
 
 .icons-sky {
     color: rgb(142, 218, 525);
 }
 
-.icon-size {
-    font-size: 25px;
-}
-
-
-/* AVATAR  */
-.img-avatar {
-    width: 50px;
-    border-radius: 50%;
-}
 
 
 /* CHAT-MESSAGES */
@@ -80,8 +72,20 @@
 }
 
 
-/* 
-footer {
-    position: sticky;
-    bottom:0;
-} */
+
+#user-info {
+    height: 70px;
+}
+
+#icon-rounded {
+    height: 50px;
+    width: 50px;
+}
+
+#notifications {
+    height: 80px;
+}
+
+header, footer {
+    height: 70px;
+}
