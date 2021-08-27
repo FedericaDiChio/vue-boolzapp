@@ -1,5 +1,4 @@
 
-
 const root = new Vue ({
     el: "#root",
     data: {
@@ -7,8 +6,11 @@ const root = new Vue ({
             name: 'Nome Utente',
             avatar: '_io',
         },
-    contacts,
+        contacts,
     },
-    methods: {}
-})
+    methods: {},
+});
+
+console.log("segff")
+
 
