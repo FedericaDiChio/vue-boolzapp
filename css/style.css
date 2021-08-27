@@ -1,4 +1,3 @@
-
 .bg-grad {
     height: 100vh;
     background-image:
@@ -11,24 +10,16 @@
     );
 }
 
-/**MODIFICARE**/  
-.container {
-    height: 700px;
-} 
-
-
 /* COL */ 
+
 .left-col {
-    height: 700px; /**MODIFICARE**/
+    height: 700px;
     
 }
 
-.right-col {
-    background-image: url("../img/mine.jpg")
-}
-
-.dunno { /**MODIFICARE**/
-    height: 70px;
+.right-col { 
+    height: 700px;   
+    background-image: url("../img/mine.jpg");
 }
 
 /* BACKGROUND COLOR  */
@@ -40,33 +31,57 @@
     background-color: rgb(142, 218, 525);
 }
 
-.contact:hover {
-    background-color: rgb(233, 235, 235);
-}
-
 .bg-user {
     background-color: rgb(213, 249, 186);
 }
 
-.bg-contact {
-    background-color: rgb(255, 255, 255);
+.bg-white {
+    background-color: rgb(255,255,255);
 }
+
+/* CONTACTS  */
+.contact {
+    border-bottom: 0.5px solid rgb(234,234,234);
+    width: 100%;
+}
+
+.contact:hover {
+    background-color: rgb(233, 235, 235);
+}
+
 
 /* ICONS  */
-.icons-grey { /**MODIFICARE**/
+.icons-grey {
     color: rgb(177, 177, 177);
-    font-size: 20px;
+}
+
+.icons-sky {
+    color: rgb(142, 218, 525);
+}
+
+.icon-size {
+    font-size: 25px;
 }
 
 
-img { /**MODIFICARE**/
+/* AVATAR  */
+.img-avatar {
     width: 50px;
     border-radius: 50%;
 }
 
+
+/* CHAT-MESSAGES */
 .message {
     border-radius: 8px;
     width: 300px;
-    height: 50px;
+    min-height: 50px;
     padding-left: 10px;
 }
+
+
+/* 
+footer {
+    position: sticky;
+    bottom:0;
+} */

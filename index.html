@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Boolzapp</title>
 </head>
+
+
 <body>
-    <!-- GRADIENT  -->
-    <section class="d-flex align-items-center justify-content-center bg-grad">
-        <!-- MAIN -->
-        <main class="container">
+    <div class="d-flex align-items-center bg-grad">
+        <div class="container">
             <div class="row">
-            <!-- LEFT COL  -->
-                <div class="col-4 overflow-auto left-col bg-white">
-                    <div class="row">
-                        <!-- USER NAME  -->
-                        <div class="col-12 d-flex justify-content-between align-items-center bg-grey">
-                            <div>
-                                <img src="./img/avatar_io.jpg" alt="">
+                <div class="col-4 p-0 left-col overflow-auto bg-white">
+                    <header class="">
+                        <!-- USER AVATAR  -->
+                        <div class="d-flex align-items-center justify-content-between user-avatar bg-grey">
+                            <div class="p-2">
+                                <img src="./img/avatar_io.jpg" alt="avatar" class="img-avatar">
                                 <span>Nome utente</span>
                             </div>
                             <!-- ICONS  -->
-                            <div class="mx-2 icons-grey">
+                            <div class="mx-2 icons-grey icons icon-size">
                                 <i class="fas fa-circle-notch "></i>
-                                <i class="fas fa-comment-alt px-2"></i>
+                                <i class="fas fa-comment-alt px-3"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
                         </div>
-                        <!-- BELL  -->
-                        <div class="col-12 d-flex align-items-center bg-grey dunno bg-sky">
+                        <!-- NOTIFICATIONS  -->
+                        <div class="d-flex align-items-center p-3 bg-sky notifications">
                             <div class="icons-sky">
-                                <i class="fas fa-bell-slash"></i>
+                                <i class="fas fa-bell-slash bg-white rounded-circle me-3 p-3"></i>
+                            </div>
+                            <div>
+                                <div>Ricevi notifiche di nuovi messaggi</div>
+                                <a href="">Attiva notifiche desktop</a>
                             </div>
                         </div>
                         <!-- INPUT SEARCH  -->
-                        <div class="col-12 d-flex align-items-center justify-content-center">
-                            <div class="input-group m-2"> 
-                                <input type="search" id="search" class="form-control" placeholder="Cerca o inizia nuova chat">
+                        <div class="d-flex align-items-center justify-content-center bg-grey search">
+                            <div class="input-group m-2">
+                                <input type="search" id="search" class="form-control"
+                                    placeholder="Cerca o inizia nuova chat">
                             </div>
+                        </div>     
+                    </header>
+                    <!-- CONTACT -->
+                    <div class="col-12 d-flex align-items-center contact">
+                        <div class="my-2">
+                            <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                            <span>Nome utente</span>
                         </div>
-                        <!-- CONTACT -->
-                        <div class="col-12 d-flex align-items-center contact dunno">
-                            <div class>
-                                <img src="./img/avatar_io.jpg" alt="">
-                                <span>Nome utente</span>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex align-items-center contact dunno">
-                            <div class>
-                                <img src="./img/avatar_io.jpg" alt="">
-                                <span>Nome utente</span>
-                            </div>
-                        </div>
-                        
                     </div>
+                    <!-- CONTACT -->
+                    <div class="col-12 d-flex align-items-center contact">
+                        <div class="my-2">
+                            <img src="./img/avatar_io.jpg" class="img-avatar" alt="avatar">
+                            <span>Nome utente</span>
+                        </div>
+                    </div> 
+                    
                 </div>
-                <div class="col-8 overflow-auto right-col">
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-between align-items-center bg-grey">
-                            <!-- CHAT NAME -->
-                            <div>
-                                <img src="./img/avatar_io.jpg" alt="">
+                <div class="col-8 p-0 overflow-auto d-flex flex-column justify-content-between right-col">
+                    <div>
+                        <!-- USER AVATAR  -->
+                        <div class=" d-flex align-items-center justify-content-between user-avatar bg-grey">
+                            <div class="p-2">
+                                <img src="./img/avatar_io.jpg" alt="avatar" class="img-avatar">
                                 <span>Nome utente</span>
                             </div>
                             <!-- ICONS  -->
-                            <div class="mx-2 icons-grey">
+                            <div class="mx-2 icons-grey icons icon-size">
                                 <i class="fas fa-search"></i>
-                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-paperclip px-3"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
                         </div>
-                        <div class="col-12 d-flex justify-content-end px-5">
-                            <div class= "d-flex align-items-center mt-4 bg-user message">
-                                Hai portato a spasso il cane?
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end px-5">
-                            <div class= "d-flex align-items-center mt-4 bg-user message">
-                                Ricordati di dargli da mangiare.
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-start px-5">
-                            <div class= "d-flex align-items-center mt-4 bg-contact message">
-                                Ho fatto tutto, tranquilla!
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end px-5">
-                            <div class= "d-flex align-items-center mt-4 bg-user message">
-                                Ok, va bene.
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 px-5 d-flex justify-content-end">
+                                    <div class="d-flex align-items-center mt-4 bg-user message">
+                                        Ok, va bene.
+                                    </div>
+                                </div>
+                                <div class="col-12 px-5 d-flex justify-content-end">
+                                    <div class="d-flex align-items-center mt-4 bg-user message">
+                                        Ok, va bene.
+                                    </div>
+                                </div>
+                                
+                               
                             </div>
                         </div>
                     </div>
+                    <footer class="d-flex justify-content-between align-items-center p-3 mt-5 bg-grey">
+                        <i class="far fa-smile icons-grey icon-size"></i>
+                        <div class="input-group mb-1 px-5">
+                            <input type="text" class="form-control" placeholder="Scrivi un nuovo messaggio">
+                        </div>
+                       <i class="fas fa-microphone icons-grey icon-size"></i>
+                    </footer>
                 </div>
             </div>
-        </main>
-    </section>    
-    </body>
+        </div>
+    </div>
+   
+</body>
+
 </html>
