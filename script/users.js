@@ -20,3 +20,4 @@ const contacts = [
     avatar: '_4',
   },
 ];
+
