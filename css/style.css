@@ -13,12 +13,12 @@
 /* COL */ 
 
 .left-col {
-    height: 700px;
+    height: 700px;   /*MODIFICARE*/
     
 }
 
 .right-col { 
-    height: 700px;   
+    height: 700px;    /*MODIFICARE*/
     background-image: url("../img/mine.jpg");
 }
 
