@@ -1,3 +1,5 @@
+/**RIVEDERE E ORDINARE**/
+
 body {
     height: 100vh;
     background-image: linear-gradient(
@@ -14,7 +16,6 @@ main {
 
 .section-height {
     height: 70px;
-    
 }
 
 .img-avatar {
