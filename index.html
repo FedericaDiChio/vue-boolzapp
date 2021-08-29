@@ -11,6 +11,8 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="./script/data.js"></script>
+        <script src="./script/users.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
     <title>Boolzapp</title>
@@ -53,11 +55,16 @@
                             </div>
                         </section>
                         <!-- CONTACTS  -->
-                        <section v-for="contact in contacts"  id="contacts" class="overflow-auto d-flex flex-column contact">
+                        <section 
+                            v-for="contact in contacts" 
+                            id="contacts" 
+                            class="overflow-auto d-flex flex-column contact">
                             <div class="my-2 section-height">
                                 <img v-bind:src="'./img/avatar' + contact.avatar  + '.jpg'" class="img-avatar" 
-                                v-bind:alt="contact.name">
+                                v-bind:alt="contact.name"
+                                >
                                 <span>{{ contact.name }}</span>
+                                
                             </div>
                         </section>
                     </div>
@@ -75,52 +82,22 @@
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
                         </header>
-                        <main class="flex-grow-1 overflow-auto right-col">
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-start">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
-                                </div>
-                            </div>
-                            <div class="col-12 px-5 d-flex justify-content-end">
-                                <div class="d-flex align-items-center mt-4 bg-user message">
-                                    Ok, va bene.
+                        <!-- CHAT  -->
+                        <main id="main-chat" class="flex-grow-1 overflow-auto right-col">
+                            <div v-for="(value, key) in data.contacts[0].messages" class="px-5 d-flex justify-content-end">
+                                <div class="d-flex align-items-center mt-4 message sent">
+                                    {{ value.message }}  
                                 </div>
                             </div>
                         </main>
+                        <!-- FOOTER  -->
                         <footer class="d-flex justify-content-between align-items-center p-3 bg-grey">
                             <i class="far fa-smile icons-grey icon-size"></i>
                             <div class="input-group mb-1 px-5">
-                                <input type="text" class="form-control" placeholder="Scrivi un nuovo messaggio">
+                                <input type="text" 
+                                class="form-control" 
+                                placeholder="Scrivi un nuovo messaggio" 
+                                 >
                             </div>
                             <i class="fas fa-microphone icons-grey icon-size"></i>
                         </footer>
@@ -129,7 +106,7 @@
             </div>
         </div>
     </div>
-<script src="./script/users.js"></script>
-<script src="./script/script.js"></script>
+    
+    <script src="./script/script.js"></script>
 </body>
 </html>
