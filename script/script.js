@@ -99,7 +99,12 @@ const root = new Vue ({
         setCurrentContact(index){
            this.currentContact = index;
         },
-       
+        sendText(){
+            if(!newText) return; //per evitare che l'utente invii messaggi male//
+            
+            this.addText(this.newText, "sent"); //oggetto per messaggi inviati //
+            this.newText = "";   //per ripulire la casella di testo dopo l'invio//
+        },
         
         
 
