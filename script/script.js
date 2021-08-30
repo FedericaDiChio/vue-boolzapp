@@ -3,6 +3,7 @@ const root = new Vue ({
     el: "#root",
     
     data: {
+        newText: "",
         currentContact: 0,
         user: {
             name: 'Nome Utente',
@@ -97,9 +98,19 @@ const root = new Vue ({
     methods: {
         setCurrentContact(index){
            this.currentContact = index;
-        }
-    },
-    
-    },
-);
+        },
+       
+        
+        
 
+        //funzione per creare l'oggetto dove pushare i nostri messaggi e quelli automatici di risposta //
+        addText(text, status) {
+            const newText = {
+                status,
+                message: text,
+                date: dayjs().format("DD/MM/YYYY HH:mmm:ss"),
+            };
+        this.contacts[this.currentContact].messages.push(newText);
+        },
+    }, 
+});    

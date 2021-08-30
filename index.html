@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="./script/users.js"></script>
 
@@ -99,8 +100,10 @@
                             <div class="input-group mb-1 px-5">
                                 <input type="text" 
                                 class="form-control" 
-                                placeholder="Scrivi un nuovo messaggio" 
-                                 >
+                                placeholder="Scrivi un nuovo messaggio"
+                                v-model="newText"
+                                @keyup.enter="sendText"    
+                                >
                             </div>
                             <i class="fas fa-microphone icons-grey icon-size"></i>
                         </footer>
