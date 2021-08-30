@@ -39,9 +39,8 @@
                         </section>
                         <!-- NOTIFICATIONS  -->
                         <section id="notifications" class="d-flex align-items-center bg-sky">
-                            <div id="icon-rounded"
-                                class="mx-2 rounded-circle d-flex align-items-center justify-content-center bg-white">
-                                <i class="fas fa-bell-slash"></i>
+                            <div class="mx-2 rounded-circle d-flex align-items-center justify-content-center bg-white icons-rounded">
+                                <i class="fas fa-bell-slash icons-lightblue"></i>
                             </div>
                             <div>
                                 <div>Ricevi notifiche di nuovi messaggi</div>
@@ -60,7 +59,7 @@
                             @click="setCurrentContact(index)"
                             v-bind:class="currentContact === index ? 'active' : null"
                             id="contacts" 
-                            class="overflow-auto d-flex flex-column contact">
+                            class="overflow-auto d-flex flex-column divider">
                             <div class="my-2 section-height">
                                 <img v-bind:src="'./img/avatar' + contact.avatar  + '.jpg'" class="img-avatar" 
                                 v-bind:alt="contact.name"
@@ -88,14 +87,14 @@
                         </header>
                         <!-- CHAT  -->
                         <main id="main-chat" class="flex-grow-1 overflow-auto right-col">
-                            <div class="">
-                                <div 
-                                v-for="item in contacts[currentContact].messages"                            
-                                v-bind:class="item.status" class= "m-4 message">
-                                <p>{{ item.message }}</p>
-                                <p class="time">{{ item.date }}</p>
+                            <div v-for="contact in contacts[currentContact].messages"                            
+                            v-bind:class="contact.status" class="message-container">
+                                <div class="message">
+                                    <p>{{ contact.message }}</p>
+                                    <p class="time">{{ contact.date }}</p>
+                                </div>
                             </div>
-                            </div>
+                            
                         </main>
                         <!-- FOOTER  -->
                         <footer class="d-flex justify-content-between align-items-center p-3 bg-grey">
