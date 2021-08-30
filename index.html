@@ -58,6 +58,8 @@
                         <section 
                             v-for="(contact, index) in contacts" 
                             @click="setCurrentContact(index)"
+                            v-bind:class="currentContact === index ? 'active' : null"
+                            
                             id="contacts" 
                             class="overflow-auto d-flex flex-column contact">
                             <div class="my-2 section-height">
@@ -85,13 +87,13 @@
                         </header>
                         <!-- CHAT  -->
                         <main id="main-chat" class="flex-grow-1 overflow-auto right-col">
-                            <div 
-                            v-for="item in contacts[currentContact].messages"                            
-                            v-bind:class="item.status" class= "m-4 message">
-                                <div>
-                                    <p>{{ item.message }}</p>
-                                    <p>{{ item.date }}</p>
-                                </div>
+                            <div class="">
+                                <div 
+                                v-for="item in contacts[currentContact].messages"                            
+                                v-bind:class="item.status" class= "m-4 message">
+                                <p>{{ item.message }}</p>
+                                <p class="time">{{ item.date }}</p>
+                            </div>
                             </div>
                         </main>
                         <!-- FOOTER  -->

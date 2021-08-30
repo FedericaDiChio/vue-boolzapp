@@ -37,6 +37,9 @@ body {
     background-color: rgb(142, 218, 525);
 }
 
+.message .time {
+    font-size: 10px;
+}
 .sent {
     
     background-color: rgb(213, 249, 186);
@@ -91,4 +94,8 @@ body {
 
 header, footer {
     height: 70px;
+}
+
+.active {
+    background-color: rgb(233, 235, 235);
 }

@@ -96,7 +96,7 @@ const root = new Vue ({
           ],
     },
     methods: {
-        setCurrentContact(index){
+        setCurrentContact(index){  //change index in contacts //
            this.currentContact = index;
         },
         sendText(){
@@ -123,4 +123,5 @@ const root = new Vue ({
         this.contacts[this.currentContact].messages.push(newText);
         },
     }, 
-});    
+   
+   });    
