@@ -59,7 +59,6 @@
                             v-for="(contact, index) in contacts" 
                             @click="setCurrentContact(index)"
                             v-bind:class="currentContact === index ? 'active' : null"
-                            
                             id="contacts" 
                             class="overflow-auto d-flex flex-column contact">
                             <div class="my-2 section-height">
@@ -75,8 +74,10 @@
                         <header class="d-flex align-items-center justify-content-between bg-grey">
                             <!-- AVATAR  -->
                             <div class="p-2 section-height">
-                                <img src="./img/avatar_io.jpg" alt="avatar" class="img-avatar">
-                                <span>Nome utente</span>
+                                <img v-bind:src="'./img/avatar' + contacts[currentContact].avatar  + '.jpg'" 
+                                v-bind:alt="contacts[currentContact].name" 
+                                class="img-avatar">
+                                <span>{{ contacts[currentContact].name }}</span>
                             </div>
                             <!-- ICONS  -->
                             <div class="mx-2">
