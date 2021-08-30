@@ -38,12 +38,13 @@ body {
 }
 
 .sent {
+    
     background-color: rgb(213, 249, 186);
 }
 
 .received {
     background-color: rgb(255,255,255);
-    
+     
 }
 
 /* CONTACTS  */
