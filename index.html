@@ -88,13 +88,12 @@
                         <!-- CHAT  -->
                         <main id="main-chat" class="flex-grow-1 overflow-auto right-col">
                             <div v-for="contact in contacts[currentContact].messages"                            
-                            v-bind:class="contact.status" class="message-container">
-                                <div class="message">
+                            v-bind:class="contact.status" class="m-3 message-container">
+                                <div class="px-3 rounded-3 message">
                                     <p>{{ contact.message }}</p>
                                     <p class="time">{{ contact.date }}</p>
                                 </div>
                             </div>
-                            
                         </main>
                         <!-- FOOTER  -->
                         <footer class="d-flex justify-content-between align-items-center p-3 bg-grey">
