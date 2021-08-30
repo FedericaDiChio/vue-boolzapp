@@ -100,20 +100,25 @@ const root = new Vue ({
            this.currentContact = index;
         },
         sendText(){
-            if(!newText) return; //per evitare che l'utente invii messaggi male//
+            if(!this.newText) return; // validation //
+        
+            this.addText(this.newText, "sent");  //for sent text //
+            this.newText = ""; //reset after enter //
+        
+        //timing function for automatic response//    
+        setTimeout(() => {
+            this.addText("ok", "received"); //for received text //
             
-            this.addText(this.newText, "sent"); //oggetto per messaggi inviati //
-            this.newText = "";   //per ripulire la casella di testo dopo l'invio//
-        },
+        }, 1000);
         
+        },    
         
-
-        //funzione per creare l'oggetto dove pushare i nostri messaggi e quelli automatici di risposta //
+        //obj for sent and received text //
         addText(text, status) {
             const newText = {
                 status,
                 message: text,
-                date: dayjs().format("DD/MM/YYYY HH:mmm:ss"),
+                date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
             };
         this.contacts[this.currentContact].messages.push(newText);
         },
