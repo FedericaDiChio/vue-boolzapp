@@ -4,6 +4,7 @@ const root = new Vue ({
     
     data: {
         newText: "",
+        searchTerm: "",
         currentContact: 0,
         user: {
             name: 'Nome Utente',
@@ -122,6 +123,12 @@ const root = new Vue ({
             };
         this.contacts[this.currentContact].messages.push(newText);
         },
-    }, 
-   
-   });    
+        showContact(contact){
+          if(!this.searchTerm.trim()) return true;
+          
+        },
+        
+      }, 
+    });    
+    
+  

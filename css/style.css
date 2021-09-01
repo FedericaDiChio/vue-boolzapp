@@ -9,6 +9,8 @@ body {
     );
   }
 
+
+
 .wrapper {
       height: 95vh;
 }
@@ -76,8 +78,9 @@ header, footer {
 }
 
 #contacts.active {
-    background-color: rgb(233, 235, 235);
+    background-color: pink;
 }
+
 
 /* CHAT */
 #main-chat .message-container {
@@ -105,3 +108,4 @@ header, footer {
     font-size: 10px;
     text-align:end;
 }
+
