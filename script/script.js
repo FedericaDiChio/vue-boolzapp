@@ -125,7 +125,9 @@ const root = new Vue ({
         },
         showContact(contact){
           if(!this.searchTerm.trim()) return true;
-          
+          const filter = this.searchTerm;
+          contact.name = contact.name.toLowerCase();
+          return contact.name.includes(filter);
         },
         
       }, 
