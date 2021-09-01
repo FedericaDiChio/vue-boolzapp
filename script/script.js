@@ -4,7 +4,7 @@ const root = new Vue ({
     
     data: {
         newText: "",
-        searchTerm: "",
+        searchContact: "",
         currentContact: 0,
         user: {
             name: 'Nome Utente',
@@ -123,13 +123,19 @@ const root = new Vue ({
             };
         this.contacts[this.currentContact].messages.push(newText);
         },
-        showContact(contact){
-          if(!this.searchTerm.trim()) return true;
-          const filter = this.searchTerm;
-          contact.name = contact.name.toLowerCase();
-          return contact.name.includes(filter);
-        },
-        
+        showContact(){
+          // if(!this.searchContact) return;
+          const filter = this.searchContact.toLowerCase();
+          this.contacts.forEach((contact)=>{
+            const contactName = contact.name.toLowerCase();
+            contact.visible = contactName.includes(filter);
+            // if(contactName.includes(filter)) {
+            //   contact.visible = true;
+            // } else {
+            //   contact.visible = false;
+            // } 
+          });
+        }
       }, 
     });    
     

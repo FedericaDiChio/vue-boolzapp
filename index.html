@@ -52,23 +52,22 @@
                         class="d-flex align-items-center justify-content-center w-100 bg-grey">
                             <div class="input-group m-2">
                                 <input type="text" class="form-control"
-                                v-model="searchTerm"
+                                v-model.trim="searchContact"
+                                @keyup="showContact"
                                 placeholder="Cerca o inizia nuova chat">
                             </div>
                         </section>
                         <!-- CONTACTS  -->
                         <section 
                             v-for="(contact, index) in contacts"
-                            v-if="showContact(contact)" 
+                            v-if="contact.visible"
                             @click="setCurrentContact(index)"
                             v-bind:class="currentContact === index ? 'active' : null"
                             id="contacts" 
                             class="overflow-auto d-flex flex-column divider">
                             <div class="my-2 section-height">
                                 <img v-bind:src="'./img/avatar' + contact.avatar  + '.jpg'" class="img-avatar" 
-                                v-bind:alt="contact.name"                                
-                                v-bind:class="contact.visible"
-                                >
+                                v-bind:alt="contact.name">
                                 <span>{{ contact.name }}</span>
                                 
                             </div>
